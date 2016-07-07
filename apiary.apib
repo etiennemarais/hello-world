@@ -1,0 +1,29 @@
+version: v1
+uri_prefix: /api/v1 
+
+# HelloWorld
+
+Hello world is a simple GET endpoint
+
+
+# Index [/]
+
+## Index page [GET /]
+
+The app needs to be able to check if a phone number is verified with a phone number and this endpoint enables
+the client to do that check.
+            
++ Request (application/json)
+
+    + Headers
+    
+            Content-Type: application/json
+            Authorization: Token TestApiKey1234
+            
+
++ Response 200 (application/json)
+
+        {
+            "status": 200,
+            "message": "This is the homepage"
+        }
