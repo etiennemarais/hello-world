@@ -6,7 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "etiennemarais/outline-laravel": "^0.4.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -33,6 +34,11 @@
             "php -r \"copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+            "if ! [[ -d ext/drafter ]]; then echo \"### Installing drafter to ./ext; drafter bin to ./vendor/bin/ ###\"; fi",
+            "if ! [[ -d ext/drafter ]]; then git clone --branch v2.2.0 --recursive https://github.com/apiaryio/drafter.git ext/drafter; fi",
+            "if ! [[ -d vendor/bin ]]; then mkdir -p vendor/bin; fi",
+            "if ! [[ -f vendor/bin/drafter ]]; then cd ext/drafter && ./configure && make drafter; fi",
+            "if ! [[ -f vendor/bin/drafter ]]; then cd vendor/bin && ln -s ../../ext/drafter/bin/drafter drafter; fi",
             "php artisan key:generate"
         ],
         "post-install-cmd": [

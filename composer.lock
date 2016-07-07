@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "afbdc183bda9a030593f8e172db49d42",
+    "content-hash": "b64b2a8db07e42b127f5700289753fbd",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,138 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "etiennemarais/outline",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/etiennemarais/outline.git",
+                "reference": "ccdba1010a365328cc22fcefbd4c61518ac393f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/etiennemarais/outline/zipball/ccdba1010a365328cc22fcefbd4c61518ac393f1",
+                "reference": "ccdba1010a365328cc22fcefbd4c61518ac393f1",
+                "shasum": ""
+            },
+            "require": {
+                "hmaus/drafter-php": "2.*",
+                "php": "5.6.*"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "~1.4",
+                "illuminate/support": "~5.2",
+                "mockery/mockery": "0.9.*",
+                "phpspec/phpspec": "~2.1",
+                "phpunit/phpunit": "~4.0",
+                "symfony/var-dumper": "~3.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Outline\\": "src/Outline"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Etienne Marais",
+                    "email": "hello@etiennemarais.co.za",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parse and generate API Blueprint markdown into Feature/Acceptance tests.",
+            "keywords": [
+                "TDD",
+                "api",
+                "blueprint",
+                "fixtures",
+                "generated docs",
+                "specification"
+            ],
+            "time": "2016-02-04 15:01:30"
+        },
+        {
+            "name": "etiennemarais/outline-laravel",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/etiennemarais/outline-laravel.git",
+                "reference": "1adca0588a8c2f8840a8d40c0e51187afcca10c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/etiennemarais/outline-laravel/zipball/1adca0588a8c2f8840a8d40c0e51187afcca10c5",
+                "reference": "1adca0588a8c2f8840a8d40c0e51187afcca10c5",
+                "shasum": ""
+            },
+            "require": {
+                "etiennemarais/outline": "0.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OutlineLaravel\\": "src/OutlineLaravel/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Etienne Marais",
+                    "email": "hello@etiennemarais.co.za"
+                }
+            ],
+            "description": "Service provider for outline test generator",
+            "time": "2016-02-04 15:04:16"
+        },
+        {
+            "name": "hmaus/drafter-php",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hendrikmaus/drafter-php.git",
+                "reference": "bc2038e313e305d5b5899bb742dc99a5e86b43b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hendrikmaus/drafter-php/zipball/bc2038e313e305d5b5899bb742dc99a5e86b43b7",
+                "reference": "bc2038e313e305d5b5899bb742dc99a5e86b43b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "symfony/process": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "~0.1",
+                "codegyre/robo": "~0.5",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrafterPhp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hendrik Maus",
+                    "email": "aidentailor@gmail.com"
+                }
+            ],
+            "description": "PHP wrapper around drafter binary",
+            "time": "2015-11-07 11:58:02"
         },
         {
             "name": "jakub-onderka/php-console-color",
